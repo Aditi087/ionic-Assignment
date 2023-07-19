@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import {
+  IonApp,
+  IonRouterOutlet,
+  IonTabBar,
+  IonTabs,
+  setupIonicReact,
+} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -22,22 +28,31 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Sidebar from './components/sidebar/Sidebar';
+import RightDrawer from './components/drawer/RightDrawer';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+  // const [open, setOpen] = useState(false);
+  // console.log(open);
+  return (
+    <IonApp className="app">
+      <IonReactRouter>
+        <IonRouterOutlet>
+          {/* <Route> */}
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          {/* </Route> */}
+        </IonRouterOutlet>
+        {/* <Sidebar open={open} setOpen={setOpen} /> */}
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

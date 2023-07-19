@@ -1,0 +1,17 @@
+.drawerOpenBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 150;
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: transparent !important;
+}
+
+.modal_btn {
+  margin: auto 0;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 34px;
+}

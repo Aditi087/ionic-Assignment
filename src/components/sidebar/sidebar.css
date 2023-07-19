@@ -1,0 +1,80 @@
+a {
+  text-decoration: none;
+}
+.sidebar_body {
+  display: flex;
+}
+
+#sidebar {
+  width: 12rem;
+  height: 100vh;
+  background-color: rgb(10, 44, 95) !important;
+  padding: 1rem 0;
+}
+
+.logo_div {
+  padding: 20px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.menu_text {
+  font-size: 13px !important;
+  font-weight: 500;
+  color: rgb(190, 190, 190);
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+.menu_icon {
+  font-size: 22px;
+  width: max-content;
+  margin-right: 5px;
+  color: rgb(190, 190, 190);
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: auto;
+}
+.menu_item {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border-top-right-radius: 35px !important;
+  border-bottom-right-radius: 35px !important;
+  background-color: rgba(10, 44, 95, 0);
+  transition: all 1s;
+}
+.active_menu {
+  background-color: rgb(113, 55, 150) !important;
+}
+.active_text {
+  color: whitesmoke !important;
+}
+
+.header_div {
+  height: 3rem;
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex !important;
+  justify-content: end !important;
+  padding: 10px 20px;
+}
+.header_btn {
+  margin: auto 0;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header_icon {
+  transform: rotate(180deg);
+}
+.open_icon {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
